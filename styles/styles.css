@@ -8,60 +8,66 @@
 }
 
 body {
-  background-color: #01464b;
+  background-color: #01097e;
   text-align: center;
 }
 
 .choice:hover {
-  background-color: #ddd;
+  background-color: #0084ff;
+  
 }
 
 .choice:hover::after {
-  content: "Are you sure!";
+  content: "Choose your weapon!";
   position: absolute;
-  background-color: #f9edbe;
+  background-color: #0084ff;
   padding: 10px;
-  border: 1px solid #f0c36d;
+  border: 1px solid #000000;
   border-radius: 5px;
-  z-index: 1; /* Added */
-  top: 100%; /* Added */
-  left: 50%; /* Added */
+  border-style: inset;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
 }
 
 #buttons {
   display: flex;
   justify-content: center;
-  order: 2;
+  max-width: 75%;
+  padding: 10px;
+  object-fit: contain;
 }
 
 #scoreboard {
-  text-align: center;
-  order: 3;
-  background-color: #bebebe;
-  color:rgb(0, 0, 0);
-  border-radius: double;
+  display: flex;
+  background-color: #0084ff;
+  align-content: center;
+  color: #ffffff;
+  border: #000ece;
+  border-style:double;
+  border-radius: 5px;
+  
 }
 
 #results {
   align-content: center;
-  order: 4;
-  position: relative;
-  top: -250px;
-  background-color:#bebebe;
-  color:#01464b;
-  border-color:#6df07ecd;
-  border-width:thin;
+  font-size: large;
+  background-color:#0084ff;
+  color:#ffffff;
+  border-color:#000ece;
+  border-style: inset;
   border-radius: 5px ;
+  padding: 1%;
 }
 
 .headingMain {
-  align-content: center;
-  order: 1;
+  color:#ffffff;
   font-family: 'Press Start 2P', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: #547f82;
+  background-color: #0084ff;
   border-radius: 4px;
-  border-width: 4%;
+  border-color:#000ece;
   border-style: inset;
+  padding: 2%;
 }
 
 .choice {
@@ -69,11 +75,11 @@ body {
   height: 250px;
   margin: 10px;
   border-style: inset;
-  border-color: rgba(65, 105, 122, 0.518);
+  border-color: #000ece;
   border-width: 5px;
   border-radius: 10px;
-  position: relative; /* Added to fix hover message interfering with click */
-  z-index: 2; /* Added */
+  position: relative;
+  z-index: 2;
 }
 
 .choice img {
@@ -82,3 +88,32 @@ body {
   object-fit: contain;
 }
 
+.battlefield {
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  background-color: #0084ff;
+  border: 4px solid #000ece;
+  border-radius: 10px;
+  border-style: inset;
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.battlefield img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.battlefield-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.caption {
+  text-align: center;
+  font-weight: bold;
+}

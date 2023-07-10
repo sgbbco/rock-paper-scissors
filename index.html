@@ -3,7 +3,7 @@
 
 <head>
   <title>Rock Paper Scissors</title>
-  
+
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +14,35 @@
   <div id="game">
     <h1 class="headingMain">Rock Paper Scissors</h1>
     <h2 class="headingMain">The Game</h2>
+    <div class="battlefield-container">
+      <div id="playerChoice" class="battlefield">
+        <p class="caption">Player 1</p>
+      </div>
+      <div id="computerChoice" class="battlefield">
+        <p class="caption">CPU</p>
+      </div>
+    </div>
+    <div id="results"></div>
     <div id="buttons">
       <button class="choice" id="rock"><img
-          src="https://www.nicepng.com/png/detail/6-61708_rock-rock-paper-scissors-clipart.png" alt="Rock"></button>
+          src="https://www.nicepng.com/png/detail/6-61708_rock-rock-paper-scissors-clipart.png" alt="Rock">
+        <caption>Rock</caption>
+      </button>
       <button class="choice" id="paper"><img
           src="https://www.pngitem.com/pimgs/m/266-2667252_transparent-rock-paper-scissors-clipart-rock-paper-scissors.png"
-          alt="Paper"></button>
+          alt="Paper">
+        <caption>Paper</caption>
+      </button>
       <button class="choice" id="scissors"><img
           src="https://www.seekpng.com/png/detail/111-1114370_rock-paper-scissors-rock-paper-scissors-clipart.png"
-          alt="Scissors"></button>
+          alt="Scissors">
+        <caption>Scissors</caption>
+      </button>
     </div>
-    <p id="scoreboard">Player: <span id="playerScore">0</span> - CPU: <span id="cpuScore">0</span></p>
+    <div>
+      <p id="scoreboard">Player: <span id="playerScore">0</span> - CPU: <span id="cpuScore">0</span></p>
+    </div>
   </div>
-  <div id="results"></div>
   <script src="scripts/rps.js"></script>
 </body>
 
