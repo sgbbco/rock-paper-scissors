@@ -8,21 +8,21 @@
 }
 
 body {
-  background-color: #01097e;
+  background-color: #39017e;
   text-align: center;
 }
 
 .choice:hover {
-  background-color: #0084ff;
+  background-color: #ff00c3;
   
 }
 
 .choice:hover::after {
   content: "Choose your weapon!";
   position: absolute;
-  background-color: #0084ff;
+  background-color: #ff00c3;
   padding: 10px;
-  border: 1px solid #000000;
+  border: 2px solid #0011ff;
   border-radius: 5px;
   border-style: inset;
   z-index: 1;
@@ -36,50 +36,62 @@ body {
   max-width: 75%;
   padding: 10px;
   object-fit: contain;
+  background-color: #dd00ff;
+  border-color:#56017e;
+  border-style: groove;
+  border-radius: 5px;
 }
 
 #scoreboard {
   display: flex;
-  background-color: #0084ff;
+  background-color: #ff00c3;
   align-content: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px pink;
   color: #ffffff;
-  border: #000ece;
+  border: #56017e;
   border-style:double;
   border-radius: 5px;
-  
+  padding: 20px;
 }
 
 #results {
   align-content: center;
-  font-size: large;
-  background-color:#0084ff;
+  font-family: 'Teko', sans-serif;
+  font-size: xx-large;
+  text-shadow: 2px 2px 4px pink;
+  background-color:#ff00c3;
   color:#ffffff;
-  border-color:#000ece;
-  border-style: inset;
+  border-color:#dd00ff;
+  border-style: groove;
   border-radius: 5px ;
   padding: 1%;
+  margin-top: 10px;
 }
 
 .headingMain {
   color:#ffffff;
+  text-shadow: 2px 2px 4px pink;
   font-family: 'Press Start 2P', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: #0084ff;
+  background-color: #ff00c348;
   border-radius: 4px;
-  border-color:#000ece;
+  border-color:#dd00ff;
   border-style: inset;
   padding: 2%;
 }
 
 .choice {
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 275px;
   margin: 10px;
+  background-color: #56017e;
   border-style: inset;
-  border-color: #000ece;
+  border-color: #dd00ff;
   border-width: 5px;
   border-radius: 10px;
   position: relative;
-  z-index: 2;
+ 
 }
 
 .choice img {
@@ -92,14 +104,14 @@ body {
   display: flex;
   justify-content: center;
   object-fit: contain;
-  background-color: #0084ff;
-  border: 4px solid #000ece;
+  background-color: #ff00c3;
+  border: 4px solid #56017e;
   border-radius: 10px;
-  border-style: inset;
+  border-style: groove;
   margin: 10px;
   padding: 10px;
-  width: 150px;
-  height: 150px;
+  width: 225px;
+  height: 225px;
 }
 
 .battlefield img {
@@ -111,9 +123,17 @@ body {
 .battlefield-container {
   display: flex;
   justify-content: space-around;
+  background-color: #ff00c374;
+  border: #56017e;
+  border-radius: 10px;
+  border-style:groove;
+  border-width: 5px;
 }
 
-.caption {
-  text-align: center;
-  font-weight: bold;
+
+#captions {
+  color:#ffffff;
+  font-family: 'Press Start 2P', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+  text-shadow: 2px 2px 4px pink;
 }
+
